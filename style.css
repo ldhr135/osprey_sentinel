@@ -1115,3 +1115,482 @@ svg:hover {
     font-size: 1rem;
     color: var(--r);
 }
+
+/* ============================================
+   MOBILE RESPONSIVE DESIGN - TABLET DEVICES
+   Breakpoint: max-width 768px
+   ============================================ */
+
+@media (max-width: 768px) {
+    /* Global adjustments */
+    body {
+        overflow-y: auto;
+    }
+
+    .header {
+        font-size: 32px;
+    }
+
+    .line {
+        width: 80vw;
+    }
+
+    /* Init Form Adjustments */
+    #initContainer {
+        width: 90vw;
+        margin-top: 5vh;
+    }
+
+    .initForm {
+        width: calc(80vw - 1rem);
+    }
+
+    .initLabel {
+        width: 80vw;
+    }
+
+    #initPositionContainer {
+        width: calc(80vw);
+        flex-direction: column;
+    }
+
+    #initPositionForm {
+        width: calc(80vw - 1rem);
+    }
+
+    #initBtn {
+        width: 80vw;
+    }
+
+    /* Settings Page */
+    #settingsPage {
+        width: 95vw;
+        height: auto;
+    }
+
+    .settingTitle {
+        font-size: 28px;
+    }
+
+    .settingSubTitle {
+        font-size: 18px;
+    }
+
+    .settingButtonRow {
+        width: 95vw;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .appearanceBtnElem,
+    .appearanceForm {
+        width: 90vw;
+    }
+
+    /* Search Page */
+    #searchForm,
+    #searchConfirm {
+        width: 80vw;
+        font-size: 18px;
+    }
+
+    /* Main Page Grid */
+    .mainPage {
+        margin: 1vw;
+        width: auto;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        gap: 10px;
+    }
+
+    .mainPageBox {
+        font-size: 1.2em;
+    }
+
+    #displayBar {
+        grid-column: 1 / -1;
+        gap: 10px;
+    }
+
+    .flex {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    /* After Page Containers */
+    .afterPageContainer {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .afterPageStringInputs {
+        width: 100%;
+        height: auto;
+    }
+
+    .afterPageEdit {
+        width: 100%;
+    }
+
+    .afterPageStartContainer,
+    .textContainer,
+    .switchContainer {
+        width: 95vw;
+        margin-left: 0;
+        margin-right: auto;
+    }
+
+    .afterTextBoxStartInfo,
+    .afterTextBox {
+        width: 95vw;
+    }
+
+    .qataCycContainer {
+        width: 95vw;
+    }
+
+    /* Table Adjustments */
+    #mainTable {
+        width: 95vw;
+        font-size: 0.9rem;
+        height: auto;
+    }
+
+    .afterEditor {
+        width: 95vw;
+        margin-right: 0;
+    }
+
+    /* Notes Modal */
+    #notes {
+        width: 90vw;
+        height: 70vh;
+    }
+
+    /* QR Code Display */
+    #qrDisplay {
+        width: 80vw;
+        height: auto;
+    }
+
+    .afterPageQr {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Button Container */
+    #btnContainer {
+        width: 80px;
+        height: 40px;
+    }
+}
+
+/* ============================================
+   MOBILE RESPONSIVE DESIGN - MOBILE DEVICES
+   Breakpoint: max-width 480px
+   ============================================ */
+
+@media (max-width: 480px) {
+    /* Global adjustments */
+    body {
+        overflow-y: auto;
+    }
+
+    .header {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .line {
+        width: 95vw;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+    }
+
+    /* Init Form Adjustments */
+    #initContainer {
+        width: 100%;
+        margin-top: 2vh;
+        height: auto;
+    }
+
+    #initFormContainer {
+        height: auto;
+    }
+
+    .initForm {
+        width: calc(95vw - 1rem);
+        height: 5vh;
+        font-size: 14px;
+    }
+
+    .initLabel {
+        width: 95vw;
+        font-size: 14px;
+    }
+
+    #initPositionContainer {
+        width: 95vw;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #initPositionForm {
+        width: 95vw;
+    }
+
+    #initColor {
+        width: 15vw;
+        height: 15vw;
+    }
+
+    #initBtn {
+        width: 95vw;
+        height: 5vh;
+        font-size: 16px;
+    }
+
+    /* Settings Page */
+    #settingsPage {
+        width: 100vw;
+        height: auto;
+        margin: 0;
+    }
+
+    .settingTitle {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    .settingSubTitle {
+        font-size: 16px;
+        margin-top: 3vh;
+    }
+
+    .settingContainer {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .settingButtonRow {
+        width: 100%;
+        flex-direction: column;
+        gap: 8px;
+        height: auto;
+    }
+
+    .appearanceBtnElem,
+    .appearanceForm {
+        width: 95vw;
+        height: 5vh;
+        font-size: 14px;
+    }
+
+    /* Search Page */
+    #searchForm,
+    #searchConfirm {
+        width: 90vw;
+        height: 8vh;
+        font-size: 16px;
+        margin-top: 10vh;
+        margin-bottom: 3vh;
+    }
+
+    #searchReturn {
+        width: 60px;
+        height: 40px;
+        font-size: 12px;
+    }
+
+    /* Main Page Grid */
+    .mainPage {
+        margin: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        grid-template-columns: none;
+    }
+
+    .mainPageBox {
+        font-size: 1em;
+        width: 95vw;
+        margin: auto;
+        height: auto;
+        padding: 20px;
+    }
+
+    #displayBar {
+        width: 100%;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .flex {
+        width: 100%;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    #display-match,
+    #display-team,
+    #display-timer {
+        font-size: 0.9rem;
+    }
+
+    /* Navigation Buttons */
+    #backButton,
+    #continueButton {
+        width: 95vw;
+        font-size: 1em;
+    }
+
+    #back,
+    #continue {
+        width: 95vw;
+    }
+
+    /* After Page Containers */
+    .afterPageContainer {
+        flex-direction: column;
+        width: 100vw;
+        height: auto;
+        margin: 0;
+    }
+
+    .afterPageStringInputs {
+        width: 100%;
+        height: auto;
+    }
+
+    .afterPageEdit {
+        width: 100%;
+        height: auto;
+    }
+
+    .afterPageStartContainer,
+    .textContainer,
+    .switchContainer,
+    .cycContainer {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 2vh;
+    }
+
+    .afterPageStartLabel,
+    .qataLabel {
+        font-size: 0.9rem;
+    }
+
+    .afterTextBoxStartInfo,
+    .afterTextBox {
+        width: 95vw;
+        height: 5vh;
+        font-size: 1rem;
+    }
+
+    .qataCycContainer,
+    .qataCyc {
+        width: 95vw;
+        height: 6vh;
+    }
+
+    .qataCyc {
+        width: 20%;
+        font-size: 0.9rem;
+    }
+
+    /* Table Adjustments */
+    #mainTable {
+        width: 95vw;
+        font-size: 0.8rem;
+        height: auto;
+        margin: 10px auto;
+    }
+
+    #mainTable thead {
+        font-size: 1rem;
+    }
+
+    .afterEditor {
+        width: 95vw;
+        flex-direction: column;
+        margin-right: 0;
+        gap: 10px;
+    }
+
+    .editBtn {
+        width: 5vh;
+        height: 5vh;
+        font-size: 0.9rem;
+    }
+
+    #editTextBox {
+        width: 95vw;
+        font-size: 1rem;
+    }
+
+    /* Notes Modal */
+    #notesPage {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    #notes {
+        width: 95vw;
+        height: 60vh;
+        font-size: 0.9rem;
+    }
+
+    /* QR Code Display */
+    #qrDisplay {
+        width: 90vw;
+        height: auto;
+    }
+
+    #qrImage {
+        width: 100%;
+    }
+
+    .afterPageQr {
+        width: 100%;
+        height: auto;
+    }
+
+    #qrContainer {
+        width: 90vw;
+    }
+
+    #qrText,
+    #qrTextDisplay {
+        width: 90vw;
+        font-size: 0.85rem;
+    }
+
+    #qrBtn {
+        width: 90vw;
+        height: 5vh;
+        font-size: 16px;
+    }
+
+    #qrOutput {
+        width: 50px;
+        height: 50px;
+    }
+
+    /* Button Container */
+    #btnContainer {
+        width: 70px;
+        height: 35px;
+        bottom: 5px;
+        right: 5px;
+    }
+
+    /* Modal Content */
+    .modal-content {
+        width: 95%;
+        margin: 30% auto;
+        padding: 15px;
+    }
+}
